@@ -1,8 +1,8 @@
 <?php
 
-namespace Firstphp\HyperfQcloudsms\Facades;
-
 declare(strict_types = 1);
+
+namespace Firstphp\HyperfQcloudsms\Facades;
 
 /**
  * Author: 狂奔的螞蟻 <www.firstphp.com>
