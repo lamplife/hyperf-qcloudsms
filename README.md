@@ -24,10 +24,10 @@ use Firstphp\HyperfQcloudsms\QcloundSmsInterface;
  * @Inject
  * @var QcloundSmsInterface
  */
-protected $wechatInterface;
+protected $qcloundSmsInterface;
 
 public function test() {
-    $res = $this->QcloundSmsInterface->send();
+    $res = $this->qcloundSmsInterface->sendWithParam($nationCode, $phoneNumber, $templId, $params, $sign, $extend, $ext);
     var_dump($res);
 }
 ```
