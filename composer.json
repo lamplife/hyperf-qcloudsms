@@ -1,0 +1,39 @@
+{
+    "name": "firstphp/hyperf-qcloudsms",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "sms",
+        "qcloudsms"
+    ],
+    "description": "腾讯sms开发组件 for hyperf",
+    "autoload": {
+        "psr-4": {
+            "Firstphp\\HyperfQcloudsms\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "ext-swoole": ">=4.5"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "co-phpunit -c phpunit.xml --colors=always",
+        "analyse": "phpstan analyse --memory-limit 1024M -l 0 ./src",
+        "cs-fix": "php-cs-fixer fix $1"
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Firstphp\\HyperfQcloudsms\\ConfigProvider"
+        }
+    }
+}
